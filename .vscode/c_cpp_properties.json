@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "name": "Mac",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/opt/homebrew/include",                        // Homebrew includes
+        "/opt/homebrew/opt/gcc/include/c++/14",         // Adjust version as needed
+        "/opt/homebrew/opt/gcc/include/c++/14/x86_64-apple-darwin", // Internal GCC headers
+        "/opt/homebrew/opt/gcc/lib/gcc/14/include",     // GCC lib headers
+        "/Library/Developer/CommandLineTools/usr/include/c++/v1",   // macOS default C++
+        "/usr/local/include",
+        "/usr/include"
+      ],
+      "defines": [],
+      "macFrameworkPath": [
+        "/System/Library/Frameworks",
+        "/Library/Frameworks"
+      ],
+      "compilerPath": "/opt/homebrew/bin/g++-14",       // Use your Homebrew GCC path
+      "cStandard": "gnu17",
+      "cppStandard": "gnu++20",
+      "intelliSenseMode": "macos-gcc-x64"
+    }
+  ],
+  "version": 4
+}
